@@ -75,7 +75,8 @@ p=0
 n=MadEvent
 
 # Set the job name
-t=wabs_$run
+let r=$run+1
+t=wabs_$r
 
 # Extract the number of events to run
 a=`awk '/^.*=.*nevents/{print $1}' Cards/run_card.dat`
